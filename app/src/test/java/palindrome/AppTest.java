@@ -7,8 +7,14 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-    @Test void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+
+    @Test
+    void givenAPalindromShouldDisplayAppropriateResult() {
+        assertEquals("'radar' is a palindrome", App.palindromResult("radar"));
+    }
+
+    @Test
+    void givenAWordThatIsNotAPalindromShouldDisplayAppropriateResult() {
+        assertEquals("'palindrome' is not a palindrome", App.palindromResult("palindrome"));
     }
 }
