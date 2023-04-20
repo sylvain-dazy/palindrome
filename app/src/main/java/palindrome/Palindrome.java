@@ -2,22 +2,8 @@ package palindrome;
 
 public class Palindrome {
 
-    private static final String IGNORED_CHARACTERS_REGEX = "\\s|,|;|\\?|!|/|-|'|:|\\Q.\\E|\\Q\\\\E";
-
     public boolean test(String word) {
-        return word == null ? false : checkAllLetters(onlyAsciiLetters(word));
-    }
-
-    private String ignoreSpecialChars(String word) {
-        return word.replaceAll(IGNORED_CHARACTERS_REGEX, "");
-    }
-
-    private String replaceToAsciiLetters(String word) {
-        return word.replaceAll("é|è|ë", "e").replaceAll("à", "a").replaceAll("ù", "u").replaceAll("ç", "c");
-    }
-
-    private String onlyAsciiLetters(String word) {
-        return replaceToAsciiLetters(ignoreSpecialChars(word)).toLowerCase();
+        return word == null ? false : checkAllLetters(new PalindromCandidate(word).toString());
     }
 
     private boolean checkAllLetters(String word) {
