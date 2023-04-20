@@ -8,6 +8,8 @@ Others examples include 'kayak', 'sos', '1991'.
 ## Functional Analysis
 Given a string, the application will display 'is a palindrome' or 'is not a palindrome' depending if the given string is a palindrom or not.
 
-> 'palindrom' is not a palindrom
-> 'kayak' is a palindrom
-> 'sos is palindrom' is not a palindrom
+'palindrom' is not a palindrom
+
+'kayak' is a palindrom
+
+'sos is palindrom' is not a palindrom
