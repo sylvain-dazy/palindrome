@@ -3,24 +3,16 @@ package palindrome;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class PalindromeTest {
 
-    private Palindrome palindrome;
-
-    @BeforeEach
-    public void setUp() {
-        palindrome = new Palindrome();
-    }
-
     private void assertNotPalindrom(String word) {
-        assertFalse(palindrome.test(word));
+        assertFalse(Palindrome.test(word));
     }
 
     private void assertPalindrom(String word) {
-        assertTrue(palindrome.test(word));
+        assertTrue(Palindrome.test(word));
     }
 
     @Test
