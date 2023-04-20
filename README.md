@@ -1,19 +1,13 @@
 # Palindrom
 
-Recognize if a string is a palindrom.
-A palindrom is a word that can be read from right to left and vice-versa.
-E.g. 'kayak', 'sos', '1991' are a palindroms
+## Definition
+A palindrome is a word, number, phrase, or other sequence of symbols that reads the same backwards as forwards such as 'madam' or 'racecar', the date '12/11/21', and the sentence: "A man, a plan, a canal – Panama".The 19-letter Finnish word 'saippuakivikauppias' (a soapstone vendor), is the longest single-word palindrome in everyday use, while the 12-letter term tattarrattat (from James Joyce in Ulysses) is the longest in English. Punctuation, capitalization, and spaces are usually ignored - Wikipedia
 
-Given a string, the application display 'is a palindrom' or 'is not a palindrom' depending on the string.
-E.g.
+Others examples include 'kayak', 'sos', '1991'.
+
+## Functional Analysis
+Given a string, the application will display 'is a palindrome' or 'is not a palindrome' depending if the given string is a palindrom or not.
 
 > 'palindrom' is not a palindrom
 > 'kayak' is a palindrom
 > 'sos is palindrom' is not a palindrom
-
-## Analysis
-
-```
-class Palindrom
-    check(str : String) : boolean
-```
